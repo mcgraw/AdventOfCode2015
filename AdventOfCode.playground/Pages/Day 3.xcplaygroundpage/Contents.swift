@@ -63,7 +63,6 @@ struct XMMapPoint {
     }
 }
 
-
 let startTime = CFAbsoluteTimeGetCurrent()
 
 // Load in the puzzle input (switch to day2-quick to use a smaller set)
@@ -87,7 +86,6 @@ for (idx, item) in input.characters.enumerate() {
     } else {
         positions[roboPosition.move(item)] = true
     }
-
 }
 
 let elapsed = (CFAbsoluteTimeGetCurrent() - startTime)
