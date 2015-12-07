@@ -63,10 +63,10 @@ struct XMMapPoint {
     }
 }
 
-let startTime = CFAbsoluteTimeGetCurrent()
-
-// Load in the puzzle input (switch to day2-quick to use a smaller set)
+// Load in the puzzle input (switch to day3-quick to use a smaller set)
 let input = XMFileManager.shared.loadStringInputFromResource("day3")
+
+let startTime = CFAbsoluteTimeGetCurrent()
 
 // How we'll track the locations we've been to
 var positions = [String: Bool]()
