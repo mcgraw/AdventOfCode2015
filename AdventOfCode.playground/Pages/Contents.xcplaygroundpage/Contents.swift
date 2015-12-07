@@ -6,5 +6,6 @@ A Swifty implementation of Advent of Code [http://adventofcode.com/](http://adve
 - [Day 2](Day%202) - I Was Told There Would Be No Math
 - [Day 3](Day%203) - Perfectly Spherical Houses in a Vacuum
 - [Day 4](Day%204) - The Ideal Stocking Stuffer
+- [Day 5](Day%205) - Doesn't He Have Intern-Elves For This?
 
 */
