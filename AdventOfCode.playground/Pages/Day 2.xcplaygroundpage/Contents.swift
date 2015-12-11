@@ -30,6 +30,8 @@ How many total feet of ribbon should they order?
 
 [Contents](Contents) | [Go Back To Day 1](Day%201) | [Continue to Day 2](@next)
 */
+
+import Foundation
 /* Small helper function to calculate square feet and ribbon (part 2)
  *
  *      Part 1: Perfect right rectangular prism
@@ -53,6 +55,8 @@ func calculateHappiness(length l: Int, width w: Int, height h: Int) -> (sqft: In
 
 // Load in the puzzle input (switch to day2-quick to use a smaller set)
 let input = XMFileManager.shared.loadStringInputFromResource("day2")
+
+let startTime = CFAbsoluteTimeGetCurrent()
 
 // Let's first break up the input into each present dimension
 var dimensions = input.characters.split { $0 == "\n" }.map(String.init)
@@ -84,6 +88,9 @@ let totalPaperRequired = calculated.reduce(0, combine: {$0 + $1})
 
 // day2.txt       == 1598415 square feet
 // day2-quick.txt == 101 square feet
+let elapsed = (CFAbsoluteTimeGetCurrent() - startTime)
+
+print("[\(elapsed)s | \(elapsed/60)m]")
 print("Total quare feet of paper required for Santa is \(totalPaperRequired)! ")
 print("Total ribbon length required for Santa is \(totalFeetOfRibbon) ")
 

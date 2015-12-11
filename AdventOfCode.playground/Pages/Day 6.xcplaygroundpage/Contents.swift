@@ -44,6 +44,7 @@ Your puzzle answer was 15343601.
 [Contents](Contents) | [Go Back To Day 5](Day%205) | [Continue to Day 7](@next)
 */
 
+// WARNING: Insanely slow. Really need to circle back and implement more of a rect+intersection model. If you're familiar with a better way, please hit me up!
 
 import CoreGraphics
 
